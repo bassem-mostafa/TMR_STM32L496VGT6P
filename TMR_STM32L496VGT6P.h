@@ -70,12 +70,12 @@ extern "C"
         TMR_STM32L496VGT6P_ID_1,
     } TMR_STM32L496VGT6P_ID_t;
 
-    typedef struct TMR_STM32L496VGT6P_Instance_Context TMR_STM32L496VGT6P_Instance_Context_t;
+    typedef struct TMR_STM32L496VGT6P_InstanceContext TMR_STM32L496VGT6P_InstanceContext_t;
 
     typedef struct TMR_STM32L496VGT6P_Instance
     {
         TMR_STM32L496VGT6P_ID_t ID;
-        TMR_STM32L496VGT6P_Instance_Context_t * Context;
+        TMR_STM32L496VGT6P_InstanceContext_t * Context;
     } TMR_STM32L496VGT6P_Instance_t;
 
     // #############################################################################

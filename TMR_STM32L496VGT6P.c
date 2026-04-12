@@ -63,10 +63,10 @@
 // #### Private Type(s) ########################################################
 // #############################################################################
 
-typedef struct TMR_STM32L496VGT6P_Instance_Context
+typedef struct TMR_STM32L496VGT6P_InstanceContext
 {
     //  TIM_HandleTypeDef *TMRx; // FIXME
-} TMR_STM32L496VGT6P_Instance_Context_t;
+} TMR_STM32L496VGT6P_InstanceContext_t;
 
 typedef struct TMR_STM32L496VGT6P_Context
 {
@@ -154,7 +154,7 @@ static TMR_STM32L496VGT6P_Status_t TMR_STM32L496VGT6P_Instance_Initialize( TMR_S
             if ( TMR_STM32L496VGT6P_Instance->Context == NULL )
             {
                 RAM_Status_t RAM_Status = RAM_Status_Error;
-                if ( ( RAM_Status = RAM_Allocate( RAM_1, ( RAM_Reference_t * ) &TMR_STM32L496VGT6P_Instance->Context, UTIL_SizeOf( TMR_STM32L496VGT6P_Instance_Context_t ) ) ) != RAM_Status_Success )
+                if ( ( RAM_Status = RAM_Allocate( RAM_1, ( RAM_Reference_t * ) &TMR_STM32L496VGT6P_Instance->Context, UTIL_SizeOf( TMR_STM32L496VGT6P_InstanceContext_t ) ) ) != RAM_Status_Success )
                 {
                     TMR_STM32L496VGT6P_Status = TMR_STM32L496VGT6P_Status_Error;
                     break;
